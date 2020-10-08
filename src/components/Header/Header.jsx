@@ -1,8 +1,8 @@
-import React, { Component, useState } from "react";
+import React, { Component, useState, useRef, useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import {
-  Header,
+  Header as Head,
   HeaderContainer,
   Logo,
   Nav,
@@ -13,9 +13,10 @@ import {
 
 import MobileMenu from "../MobileMenu/MobileMenu.jsx";
 
-const Heade = ({ toggle }) => {
+const Header = ({ toggle }) => {
+  let header = useRef();
   return (
-    <Header className="header">
+    <Head ref={header} className="header">
       <HeaderContainer>
         <Logo type="medium">Logo</Logo>
         <Router>
@@ -35,8 +36,8 @@ const Heade = ({ toggle }) => {
         </Router>
         <MobileMenu toggle={toggle} />
       </HeaderContainer>
-    </Header>
+    </Head>
   );
 };
 
-export default Heade;
+export default Header;
