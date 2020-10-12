@@ -1,4 +1,4 @@
-### Staradmin sandbox
+# Staradmin sandbox
 
 This project is my sandbox for React development
 
