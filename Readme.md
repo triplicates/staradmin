@@ -1,6 +1,6 @@
 # Staradmin sandbox
 
-This project is my sandbox for React development
+This project is my sandbox for React development.
 
 #### Author
 
